@@ -305,8 +305,8 @@ def service_type_name(type_: str, *, strict: bool = True) -> str:
 
         test_service_name = service_name[1:]
 
-        if len(test_service_name) > 15:
-            raise BadTypeInNameException("Service name (%s) must be <= 15 bytes" % test_service_name)
+        # if len(test_service_name) > 15:
+        #     raise BadTypeInNameException("Service name (%s) must be <= 15 bytes" % test_service_name)
 
         if '--' in test_service_name:
             raise BadTypeInNameException("Service name (%s) must not contain '--'" % test_service_name)
